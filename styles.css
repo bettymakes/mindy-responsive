@@ -1,0 +1,54 @@
+/* Base Style rules (for mobile) */
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.grid-col {
+    background-color: red;
+    border: 1px solid black;
+    height: 200px;
+    float: left;
+    width: 100%;
+}
+
+/* Tablet view */
+@media screen and (min-width: 450px) and (max-width: 599px){
+  .grid-col {
+    background-color: blue;
+    width: 50%;
+  }
+}
+
+
+/* When min-width is at least 750px */
+@media screen and (min-width: 750px) {
+  .grid-col {
+    background-color: white;
+    width: 25%;
+  }
+}
+
+/* When min-width is at least 600px */
+@media screen and (min-width: 600px) and (max-width: 745px) {
+  .grid-col {
+    background-color: green;
+    width: 33.33%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
